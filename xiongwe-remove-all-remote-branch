@@ -1,0 +1,2 @@
+#!/bin/bash
+git br -r | awk -F/ '/backup/{print $2}' | xargs -I {} git push backup :{}
