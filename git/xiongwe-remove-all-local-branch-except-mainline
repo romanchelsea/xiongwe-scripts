@@ -1,2 +1,4 @@
 #!/bin/bash
+
+# mainline is the branch name I use, it is just like master branch used in GitHub
 git br | grep -v mainline | xargs -I {} git br -D {}

@@ -1,2 +1,5 @@
 #!/bin/bash
+
+# backup is the branch that I use to sync my code,
+# for some reason I am not allowed to use mainline
 git br -r | awk -F/ '/backup/{print $2}' | xargs -I {} git push backup :{}
